@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import loginReducer from './loginReducer'
+import appStartReducer from './appStartReducer'
+import screenReducer from './activeScreenReducer'
 
 export const store = configureStore({
   reducer: {
-    login: loginReducer
+    appStart: appStartReducer,
+    screen: screenReducer
   }
 })
